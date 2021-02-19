@@ -15,6 +15,7 @@ window.$docsify = {
     el: '#loading',
     basePath: "/docs/",
     plugins: [
+        EditOnGithubPlugin.create("//github.com/YR-Client-Team/docs/"),
         function (hook, vm) {
             hook.beforeEach(function (html) {
                 return html
